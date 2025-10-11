@@ -117,10 +117,10 @@ figure.wrapped figcaption {
 /* gallery stuff here */
 div.gallery {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 div.gallery figure {
-    margin: 0;
+    margin: 20;
     gap: 20px 10px;
 }
 div.gallery figcaption {
