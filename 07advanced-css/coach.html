@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Stephany Soriano" />
+    <meta
+      name="Description"
+      content="Information about the Video Game called Dead by Daylight" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Dead By Daylight 101</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/logo.png"
+        alt="logo for dead-by-daylight"
+        width="89"
+        height="50" />
+      <span>Dead by Daylight 101</span>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rulebook.html">The Rulebook</a></li>
+        <li><a href="beginner.html">Beginner section</a></li>
+        <li><a href="survivors.html">Survivors</a></li>
+        <li class="current"><a href="coach.html">Request a coach</a></li>
+      </ul>
+    </nav>
+    <!--add h1 for page title-->
+    <!--add 3 h2 and 4 p tags-->
+    <main>
+      <h1>Request a Coach</h1>
+      <form method="get" class="coachForm" action="thanks.html">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label>First Name* <input type="text" name="fname" required /></label>
+          <label>Dbd User <input type="text" name="user" /></label>
+          <label>Email* <input type="email" name="email" required /></label>
+          <label>Cell* <input type="tel" name="phone" required /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Killer or survivor</legend>
+          <label>
+            <input type="radio" name="method" value="Survivor" />Survivor
+          </label>
+
+          <label>
+            <input type="radio" name="method" value="Killer" />Killer
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What do you want to focus on</legend>
+          <label>
+            <input type="checkbox" name="looping" value="chosen" />
+            Looping
+          </label>
+          <label>
+            <input type="checkbox" name="perks and builds" value="chosen" />
+            Perks and Builds
+          </label>
+          <label>
+            <input type="checkbox" name="map knowledge" value="chosen" />
+            Map Knowledge
+          </label>
+          <label>
+            <input type="checkbox" name="techs and saves" value="chosen" />
+            Techs and Saves
+          </label>
+
+          <label
+            >Session time
+            <select name="time">
+              <option value="none">Please select</option>
+              <option value="1hr">$50 1 hour</option>
+              <option value="2hr">$100 2 hour</option>
+              <option value="3 hour game session">
+                $250 3 hour game session
+              </option>
+            </select>
+          </label>
+        </fieldset>
+
+        <label
+          >Questions or Comments<textarea name="comments"></textarea>
+        </label>
+
+        <input type="submit" value="Request Coach" />
+      </form>
+    </main>
+
+    <footer>
+      <p>please dont contact me at<a href="tel:8012334566"> 8012334566</a></p>
+      <address>
+        you can email me<a href="mailto:stephanyysor@gmail.com"> here though</a>
+      </address>
+      <p>&copy; 2025 &bull; Stephany Soriano &bull; Web Essentials</p>
+    </footer>
+  </body>
+</html>
