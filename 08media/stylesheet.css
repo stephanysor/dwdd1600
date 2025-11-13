@@ -1,0 +1,279 @@
+/* different screen browsers*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem 10px;
+}
+header span {
+    color: #2e3440;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/*nav*/
+
+
+/* start small screens*/
+
+@media only screen and (max-width: 767px) {
+        nav {
+        background-image: linear-gradient(90deg, rgba(2, 0, 8, 1) 0%, rgba(46, 52, 64, 1) 100%);
+        }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align:center;
+        padding: .8rem;
+        color: #eee;
+        text-decoration: none;
+        border-bottom: solid 3px #000;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+ 
+    nav li.current a {
+    background-color: #590902;
+}
+nav li a:hover {
+    color: #ab0000;
+}
+}
+/* end small screens*/
+
+
+
+/* start LARGE screens*/
+@media only screen and (min-width: 768px) {
+    nav {
+    border-top: solid 1px #E0E6E6;
+    
+}
+nav {
+background: linear-gradient(90deg, rgba(2, 0, 8, 1) 0%, rgba(46, 52, 64, 1) 100%);
+height: 60px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    height: 48px;
+    text-align: center;
+    
+}
+nav a {
+    padding: .83rem 1rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #eee;
+    font-weight: 700;
+}
+nav li.current a {
+    background-color: #590902;
+}
+nav li a:hover {
+    color: #ab0000;
+}
+/*img stuff here*/
+figure.wrapped {
+    float: right;
+    width: 40%;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size:  .75rem;
+}
+}
+/* end LARGE screens*/
+
+
+/*main*/
+main {
+    padding: 1rem 10px;
+  
+}
+ 
+main h1 {
+    color: #590902;
+}
+main h2 {
+    color: #a35042;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0;
+    color: #333;
+}
+main ol {
+    padding: .5rem 30px;
+    background: #efefef;
+}
+
+main dl dt {
+    color:#2e3440;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+main dl dd {
+    color: #590902;
+    font-size: .8rem;
+    margin-left: 25px;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li{
+    line-height: 150%;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+main strong {
+    font-weight: 800;
+    color: #000;
+}
+main em {
+    font-weight: 300;
+}
+main address {
+    font-style: normal;
+    background-color: #a35042;
+    padding: .5rem;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+/*gallery stuff here*/
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+  margin: 10px 20px;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #590902;
+}
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+}
+/*table stuff here*/
+table.coaches {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+table.coaches {
+    background-color: #6c070771;
+    color: eee;
+    padding: .4rem 2%;
+    text-align: center;
+}
+
+table.coaches td{
+    color: #000000;
+    padding: .4rem 2%;
+}
+table.coaches tr:nth-child(odd) {
+    background-color: #eee;
+}
+table.coaches tr:hover {
+    background-color: #ddd;
+}
+/*footer*/
+
+footer {
+    clear: both;
+    color: #efefef;
+    background-color: #2e3440;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    border-top: .2rem solid #000;
+    border-radius: .5rem;
+    
+    
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
+footer a:hover {
+    color: red;
+}
+
+.coachForm fieldset {
+    border: 3px solid #2e3440;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.coachForm legend {
+    color: #a35042;
+    font-size: .9rem;
+}
+
+.coachForm label {
+    margin: .5rem;
+}
+
+.coachForm label, .coachform select, .coachForm textarea, .coachForm [type=text], .coachForm [type=tel], .coachForm [type=email] {
+    display: block
+}
+
+.coachform select, .coachForm textarea, .coachForm [type=text], .coachForm [type=tel], .coachForm [type=email] {
+    border: solid 1px #333;
+    padding: .3rem;
+    width: 275px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+}
+
+.coachForm textarea {
+    height: 6rem;
+}
+
+.coachForm :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.coachForm [type=submit] {
+    background-color: #590902;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px; 
+    color:white;
+    margin: 1rem 0 0 1vw;
+}
+
+header, nav, main, footer{
+    max-width: 74rem;
+    margin: 0 auto;
+}
